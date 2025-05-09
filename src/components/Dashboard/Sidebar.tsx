@@ -1,0 +1,71 @@
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { 
+  LayoutDashboard, 
+  SquareStack,
+  FormInput, 
+  Table, 
+  BarChart3, 
+  Image, 
+  UserSquare, 
+  FileText 
+} from 'lucide-react';
+
+const navItems = [
+  { icon: LayoutDashboard, text: "Dashboard", active: true, path: "/" },
+  { icon: SquareStack, text: "Basic UI Elements", path: "/ui-elements" },
+  { icon: FormInput, text: "Form Elements", path: "/form-elements" },
+  { icon: Table, text: "Tables", path: "/tables" },
+  { icon: BarChart3, text: "Charts", path: "/charts" },
+  { icon: Image, text: "Icons", path: "/icons" },
+  { icon: UserSquare, text: "User Pages", path: "/user-pages" },
+  { icon: FileText, text: "Documentation", path: "/documentation" },
+];
+
+const Sidebar = () => {
+  return (
+    <div className="w-64 min-h-screen bg-dashboard-darker flex flex-col">
+      <div className="p-5 border-b border-dashboard-highlight">
+        <h1 className="text-xl font-bold text-white tracking-wider">CORONA</h1>
+      </div>
+
+      <div className="p-4 border-b border-dashboard-highlight">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-blue-500 overflow-hidden">
+            <img src="https://i.pravatar.cc/40?img=8" alt="User Avatar" className="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h3 className="text-white font-medium">Henry Klein</h3>
+            <p className="text-xs text-gray-400">Gold Member</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-4 flex-1">
+        <p className="px-6 py-2 text-xs text-gray-400 uppercase">Navigation</p>
+        <nav>
+          <ul>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <Link
+                  to={item.path}
+                  className={`flex items-center gap-3 px-6 py-3 text-sm transition-colors ${
+                    item.active 
+                      ? "text-blue-400 bg-dashboard-highlight border-l-2 border-blue-400" 
+                      : "text-gray-400 hover:text-white"
+                  }`}
+                >
+                  <item.icon size={18} />
+                  <span>{item.text}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  );
+};
+
+export default Sidebar;
