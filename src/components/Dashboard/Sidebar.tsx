@@ -43,14 +43,14 @@ const Sidebar = () => {
       </div>
 
       <div className="py-4 flex-1">
-        <p className="px-6 py-2 text-xs text-gray-400 uppercase">Navigation</p>
+        <p className="px-6 py-2 text-xs text-white text-lg uppercase">Navigation</p>
         <nav>
           <ul>
             {navItems.map((item, index) => (
-              <li key={index}>
+              <li key={index} className=''>
                 <Link
                   to={item.path}
-                  className={`flex items-center gap-3 px-6 py-3 text-sm transition-colors ${
+                  className={`flex items-center gap-3 px-6 py-3 border-1 text-sm transition-colors ${
                     item.active 
                       ? "text-blue-400 bg-dashboard-highlight border-l-2 border-blue-400" 
                       : "text-gray-400 hover:text-white"
