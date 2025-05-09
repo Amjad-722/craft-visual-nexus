@@ -32,9 +32,9 @@ const Header = () => {
           
           <div className="flex items-center gap-2 text-sm text-white">
             <div className="w-8 h-8 rounded-full bg-blue-500 overflow-hidden">
-              <img src="https://i.pravatar.cc/32?img=8" alt="User Avatar" className="w-full h-full object-cover" />
+              <img src="https://avatars.githubusercontent.com/u/159441246?v=4" alt="amjad ali" className="w-full h-full object-cover" />
             </div>
-            <span>Henry Klein</span>
+            <span>Amjad ALi</span>
           </div>
         </div>
       </div>

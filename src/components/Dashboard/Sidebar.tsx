@@ -27,16 +27,16 @@ const Sidebar = () => {
   return (
     <div className="w-64 min-h-screen bg-dashboard-darker flex flex-col">
       <div className="p-5 border-b border-dashboard-highlight">
-        <h1 className="text-xl font-bold text-white tracking-wider">CORONA</h1>
+        <h1 className="text-xl font-bold text-white tracking-wider">DASHBOARD</h1>
       </div>
 
       <div className="p-4 border-b border-dashboard-highlight">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-blue-500 overflow-hidden">
-            <img src="https://i.pravatar.cc/40?img=8" alt="User Avatar" className="w-full h-full object-cover" />
+            <img src="https://avatars.githubusercontent.com/u/159441246?v=4" alt="User Avatar" className="w-full h-full object-cover" />
           </div>
           <div>
-            <h3 className="text-white font-medium">Henry Klein</h3>
+            <h3 className="text-white font-medium">Amjad ali</h3>
             <p className="text-xs text-gray-400">Gold Member</p>
           </div>
         </div>
