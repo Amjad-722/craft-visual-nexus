@@ -14,13 +14,13 @@ import {
 
 const navItems = [
   { icon: LayoutDashboard, text: "Dashboard", active: true, path: "/" },
-  { icon: SquareStack, text: "Basic UI Elements", path: "/ui-elements" },
-  { icon: FormInput, text: "Form Elements", path: "/form-elements" },
-  { icon: Table, text: "Tables", path: "/tables" },
-  { icon: BarChart3, text: "Charts", path: "/charts" },
-  { icon: Image, text: "Icons", path: "/icons" },
-  { icon: UserSquare, text: "User Pages", path: "/user-pages" },
-  { icon: FileText, text: "Documentation", path: "/documentation" },
+  { icon: SquareStack, text: "Basic UI Elements", path: "https://www.bardui.com", external: true },
+  { icon: FormInput, text: "Form Elements", path: "https://www.google.com/search?q=form+elements", external: true },
+  { icon: Table, text: "Tables", path: "https://www.google.com/search?q=data+tables", external: true },
+  { icon: BarChart3, text: "Charts", path: "https://www.google.com/search?q=chart+libraries", external: true },
+  { icon: Image, text: "Icons", path: "https://www.heroicons.com", external: true },
+  { icon: UserSquare, text: "User Pages", path: "https://www.google.com/search?q=user+profile+templates", external: true },
+  { icon: FileText, text: "Documentation", path: "https://www.google.com/search?q=react+documentation", external: true },
 ];
 
 const Sidebar = () => {
