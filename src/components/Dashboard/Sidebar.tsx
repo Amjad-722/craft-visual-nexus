@@ -15,7 +15,7 @@ import {
 const navItems = [
   { icon: LayoutDashboard, text: "Dashboard", active: true, path: "/" },
   { icon: SquareStack, text: "Basic UI Elements", path: "https://www.bardui.com", external: true },
-  { icon: FormInput, text: "Form Elements", path: "https://www.google.com/search?q=form+elements", external: true },
+  { icon: FormInput, text: "Form Elements", path: "https://www.w3schools.com/html/html_form_elements.asp", external: true },
   { icon: Table, text: "Tables", path: "https://www.google.com/search?q=data+tables", external: true },
   { icon: BarChart3, text: "Charts", path: "https://www.google.com/search?q=chart+libraries", external: true },
   { icon: Image, text: "Icons", path: "https://www.heroicons.com", external: true },
