@@ -14,13 +14,13 @@ import {
 
 const navItems = [
   { icon: LayoutDashboard, text: "Dashboard", active: true, path: "/" },
-  { icon: SquareStack, text: "Basic UI Elements", path: "/ui-elements" },
-  { icon: FormInput, text: "Form Elements", path: "/form-elements" },
-  { icon: Table, text: "Tables", path: "/tables" },
-  { icon: BarChart3, text: "Charts", path: "/charts" },
-  { icon: Image, text: "Icons", path: "/icons" },
-  { icon: UserSquare, text: "User Pages", path: "/user-pages" },
-  { icon: FileText, text: "Documentation", path: "/documentation" },
+  { icon: SquareStack, text: "Basic UI Elements", path: "https://www.bardui.com", external: true },
+  { icon: FormInput, text: "Form Elements", path: "https://www.google.com/search?q=form+elements", external: true },
+  { icon: Table, text: "Tables", path: "https://www.google.com/search?q=data+tables", external: true },
+  { icon: BarChart3, text: "Charts", path: "https://www.google.com/search?q=chart+libraries", external: true },
+  { icon: Image, text: "Icons", path: "https://www.heroicons.com", external: true },
+  { icon: UserSquare, text: "User Pages", path: "https://www.google.com/search?q=user+profile+templates", external: true },
+  { icon: FileText, text: "Documentation", path: "https://www.google.com/search?q=react+documentation", external: true },
 ];
 
 const Sidebar = () => {
@@ -48,17 +48,33 @@ const Sidebar = () => {
           <ul>
             {navItems.map((item, index) => (
               <li key={index}>
-                <Link
-                  to={item.path}
-                  className={`flex items-center gap-3 px-6 py-3 text-sm transition-colors ${
-                    item.active 
-                      ? "text-blue-400 bg-dashboard-highlight border-l-2 border-blue-400" 
-                      : "text-gray-400 hover:text-white"
-                  }`}
-                >
-                  <item.icon size={18} />
-                  <span>{item.text}</span>
-                </Link>
+                {item.external ? (
+                  <a
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center gap-3 px-6 py-3 text-sm transition-colors ${
+                      item.active 
+                        ? "text-blue-400 bg-dashboard-highlight border-l-2 border-blue-400" 
+                        : "text-gray-400 hover:text-white"
+                    }`}
+                  >
+                    <item.icon size={18} />
+                    <span>{item.text}</span>
+                  </a>
+                ) : (
+                  <Link
+                    to={item.path}
+                    className={`flex items-center gap-3 px-6 py-3 text-sm transition-colors ${
+                      item.active 
+                        ? "text-blue-400 bg-dashboard-highlight border-l-2 border-blue-400" 
+                        : "text-gray-400 hover:text-white"
+                    }`}
+                  >
+                    <item.icon size={18} />
+                    <span>{item.text}</span>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
