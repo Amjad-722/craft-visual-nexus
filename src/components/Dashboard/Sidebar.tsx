@@ -14,11 +14,11 @@ import {
 
 const navItems = [
   { icon: LayoutDashboard, text: "Dashboard", active: true, path: "/" },
-  { icon: SquareStack, text: "Basic UI Elements", path: "/ui-elements" },
+  { icon: SquareStack, text: "Basic UI Elements", path: "/https://www.bardui.com" },
   { icon: FormInput, text: "Form Elements", path: "/form-elements" },
   { icon: Table, text: "Tables", path: "/tables" },
   { icon: BarChart3, text: "Charts", path: "/charts" },
-  { icon: Image, text: "Icons", path: "/icons" },
+  { icon: Image, text: "Icons", path: "/heroicones" },
   { icon: UserSquare, text: "User Pages", path: "/user-pages" },
   { icon: FileText, text: "Documentation", path: "/documentation" },
 ];

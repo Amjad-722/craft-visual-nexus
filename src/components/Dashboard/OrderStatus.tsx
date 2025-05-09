@@ -5,8 +5,8 @@ const orders = [
   {
     id: "02312",
     client: {
-      name: "Henry Klein",
-      avatar: "https://i.pravatar.cc/40?img=8"
+      name: "Amjad ali",
+      avatar: "https://avatars.githubusercontent.com/u/159441246?v=4"
     },
     cost: "$14,500",
     project: "Dashboard",
@@ -17,8 +17,8 @@ const orders = [
   {
     id: "02312",
     client: {
-      name: "Estella Bryan",
-      avatar: "https://i.pravatar.cc/40?img=5"
+      name: "Amjad alian",
+      avatar: "https://avatars.githubusercontent.com/u/159441246?v=4"
     },
     cost: "$14,500",
     project: "Website",
@@ -29,8 +29,8 @@ const orders = [
   {
     id: "02312",
     client: {
-      name: "Lucy Abbott",
-      avatar: "https://i.pravatar.cc/40?img=3"
+      name: "Amjad ali",
+      avatar: "https://avatars.githubusercontent.com/u/159441246?v=4"
     },
     cost: "$14,500",
     project: "App design",
@@ -41,8 +41,8 @@ const orders = [
   {
     id: "02312",
     client: {
-      name: "Peter Gill",
-      avatar: "https://i.pravatar.cc/40?img=7"
+      name: "Amjad ali",
+      avatar: "https://avatars.githubusercontent.com/u/159441246?v=4"
     },
     cost: "$14,500",
     project: "Development",
@@ -54,7 +54,7 @@ const orders = [
     id: "02312",
     client: {
       name: "Sallie Reyes",
-      avatar: "https://i.pravatar.cc/40?img=1"
+      avatar: "https://avatars.githubusercontent.com/u/159441246?v=4"
     },
     cost: "$14,500",
     project: "Website",
