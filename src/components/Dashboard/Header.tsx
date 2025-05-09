@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Search, Plus, Bell, Mail, Settings } from 'lucide-react';
+import { Search, Plus, Bell, Mail, Settings, Github, ExternalLink } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -20,16 +19,26 @@ const Header = () => {
         </button>
         
         <div className="flex items-center gap-4">
-          <button className="text-gray-400 hover:text-white transition-colors">
-            <Bell size={18} />
-          </button>
-          <button className="text-gray-400 hover:text-white transition-colors">
-            <Mail size={18} />
-          </button>
-          <button className="text-gray-400 hover:text-white transition-colors">
-            <Settings size={18} />
-          </button>
-          
+        
+
+          {/* GitHub and Upwork Links */}
+          <a
+            href="https://github.com/Amjad-722"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <Github size={18} />
+          </a>
+          <a
+            href="https://www.upwork.com/freelancers/~01c4136c175ff03b3a"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <ExternalLink size={18} />
+          </a>
+
           <div className="flex items-center gap-2 text-sm text-white">
             <div className="w-8 h-8 rounded-full bg-blue-500 overflow-hidden">
               <img src="https://avatars.githubusercontent.com/u/159441246?v=4" alt="amjad ali" className="w-full h-full object-cover" />

@@ -19,8 +19,8 @@ const navItems = [
   { icon: Table, text: "Tables", path: "https://www.google.com/search?q=data+tables", external: true },
   { icon: BarChart3, text: "Charts", path: "https://www.google.com/search?q=chart+libraries", external: true },
   { icon: Image, text: "Icons", path: "https://www.heroicons.com", external: true },
-  { icon: UserSquare, text: "User Pages", path: "https://www.google.com/search?q=user+profile+templates", external: true },
-  { icon: FileText, text: "Documentation", path: "https://www.google.com/search?q=react+documentation", external: true },
+  { icon: UserSquare, text: "Upwork", path: "https://www.google.com/search?q=user+profile+templates", external: true },
+  { icon: FileText, text: "Github", path: "https://github.com/Amjad-722", external: true },
 ];
 
 const Sidebar = () => {
@@ -37,7 +37,7 @@ const Sidebar = () => {
           </div>
           <div>
             <h3 className="text-white font-medium">Amjad ali</h3>
-            <p className="text-xs text-gray-400">Gold Member</p>
+            <p className="text-xs text-gray-400">Fonder</p>
           </div>
         </div>
       </div>
